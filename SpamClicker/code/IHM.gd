@@ -49,9 +49,11 @@ func _on_victory() -> void:
     $CO2IncreaseTimer.stop()
     $Result.show()
     $Result/Label.text = "GAGNE"
+    $Result/Return.show()
 
 # Death of user
 func _on_dead() -> void:
     $CO2IncreaseTimer.stop()
     $Result.show()
     $Result/Label.text = "PERDU"
+    $Result/Return.show()
