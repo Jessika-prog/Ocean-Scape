@@ -1,0 +1,28 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Escape/assets/interior.png" type="Texture" id=1]
+[ext_resource path="res://Escape/assets/cadre.png" type="Texture" id=2]
+
+[node name="Interior" type="CanvasLayer"]
+
+[node name="Interior" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GoPuzzle" type="TextureButton" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -186.0
+margin_top = -147.0
+margin_right = -102.0
+margin_bottom = -72.0
+texture_normal = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

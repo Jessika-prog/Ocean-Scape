@@ -1,0 +1,27 @@
+Godot Engine v3.4.stable.official.206ba70f4 - https://godotengine.org
+OpenGL ES 3.0 Renderer: NVIDIA GeForce GTX 1050 Ti/PCIe/SSE2
+OpenGL ES Batching: ON
+ 
+set state 	bg_music		default	False
+main ready
+ERROR: Condition "!f" is true. Returned: nullptr
+   at: godot_open (core/io/file_access_zip.cpp:47) - Condition "!f" is true. Returned: nullptr
+ERROR: Condition "!zfile" is true. Returned: false
+   at: try_open_pack (core/io/file_access_zip.cpp:171) - Condition "!zfile" is true. Returned: false
+calling res cache start
+cache list 	[res://globals/game.scn, res://globals/telon.scn, res://ui/hud.scn]
+s is res://globals/game.scn
+s is res://globals/telon.scn
+s is res://ui/hud.scn
+********** vm calling get scene	[SceneTree:1232]	root:[Viewport:1233]
+finished loading 	res://globals/telon.scn
+finished loading 	res://globals/game.scn
+set state 	telon		default	False
+has animation	False
+******* settings loaded	Null
+finished loading 	res://ui/hud.scn
+***** got screen size 	(1536, 864)	32
+setting window to size	(1479.111084, 832)
+vm on telon is 	vm:[Node:1284]
+connected
+**** screen ofs is 	(0, 0)
