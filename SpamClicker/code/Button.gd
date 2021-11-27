@@ -2,6 +2,7 @@ extends Area2D
 
 signal purge
 
+# Purge ocean from CO2
 func _input_event(viewport: Object, event: InputEvent, shape_idx: int) -> void:
     
     if event is InputEventMouseButton:

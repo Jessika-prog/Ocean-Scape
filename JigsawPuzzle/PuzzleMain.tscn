@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=64 format=2]
 
 [ext_resource path="res://JigsawPuzzle/arts/background1.jpg" type="Texture" id=1]
 [ext_resource path="res://JigsawPuzzle/Scenes_Pieces/Piece_1.tscn" type="PackedScene" id=2]
@@ -61,6 +61,8 @@
 [ext_resource path="res://JigsawPuzzle/Scenes_Pieces/Piece_29.tscn" type="PackedScene" id=59]
 [ext_resource path="res://JigsawPuzzle/Scenes_Pieces/Piece_32.tscn" type="PackedScene" id=60]
 [ext_resource path="res://JigsawPuzzle/Scenes_Pieces/Piece_30.tscn" type="PackedScene" id=61]
+[ext_resource path="res://JigsawPuzzle/code/IHM_Puzzle.gd" type="Script" id=62]
+[ext_resource path="res://JigsawPuzzle/IHM_Puzzle.tscn" type="PackedScene" id=63]
 
 [node name="PuzzleMain" type="Node2D"]
 
@@ -83,415 +85,418 @@ texture = ExtResource( 1 )
 expand = true
 stretch_mode = 4
 
-[node name="Piece_1" parent="." instance=ExtResource( 2 )]
+[node name="Piece_1" parent="." groups=["piece"] instance=ExtResource( 2 )]
 position = Vector2( 459, 549 )
 collision_mask = 1
 finalPosX = 459
 finalPosY = 549
 
-[node name="Piece_2" parent="." instance=ExtResource( 3 )]
+[node name="Piece_2" parent="." groups=["piece"] instance=ExtResource( 3 )]
 position = Vector2( 155, 50 )
 collision_mask = 1
 finalPosX = 155
 finalPosY = 50
 
-[node name="Piece_3" parent="." instance=ExtResource( 4 )]
+[node name="Piece_3" parent="." groups=["piece"] instance=ExtResource( 4 )]
 position = Vector2( 359, 50 )
 collision_mask = 1
 finalPosX = 359
 finalPosY = 50
 
-[node name="Piece_4" parent="." instance=ExtResource( 5 )]
+[node name="Piece_4" parent="." groups=["piece"] instance=ExtResource( 5 )]
 position = Vector2( 152, 447 )
 finalPosX = 152
 finalPosY = 447
 
-[node name="Piece_5" parent="." instance=ExtResource( 46 )]
+[node name="Piece_5" parent="." groups=["piece"] instance=ExtResource( 46 )]
 position = Vector2( 356, 448 )
 collision_mask = 1
 finalPosX = 356
 finalPosY = 448
 
-[node name="Piece_6" parent="." instance=ExtResource( 45 )]
+[node name="Piece_6" parent="." groups=["piece"] instance=ExtResource( 45 )]
 position = Vector2( 457, 346 )
 collision_mask = 1
 finalPosX = 457
 finalPosY = 346
 
-[node name="Piece_7" parent="." instance=ExtResource( 54 )]
+[node name="Piece_7" parent="." groups=["piece"] instance=ExtResource( 54 )]
 position = Vector2( 767, 448 )
 z_index = 1
 collision_mask = 1
 finalPosX = 767
 finalPosY = 448
 
-[node name="Piece_8" parent="." instance=ExtResource( 47 )]
+[node name="Piece_8" parent="." groups=["piece"] instance=ExtResource( 47 )]
 position = Vector2( 663, 549 )
 z_index = 1
 collision_mask = 1
 finalPosX = 663
 finalPosY = 549
 
-[node name="Piece_9" parent="." instance=ExtResource( 55 )]
+[node name="Piece_9" parent="." groups=["piece"] instance=ExtResource( 55 )]
 position = Vector2( 66, 347 )
 z_index = 1
 collision_mask = 1
 finalPosX = 66
 finalPosY = 347
 
-[node name="Piece_10" parent="." instance=ExtResource( 56 )]
+[node name="Piece_10" parent="." groups=["piece"] instance=ExtResource( 56 )]
 position = Vector2( 257, 348 )
 z_index = 1
 collision_mask = 1
 finalPosX = 257
 finalPosY = 348
 
-[node name="Piece_11" parent="." instance=ExtResource( 42 )]
+[node name="Piece_11" parent="." groups=["piece"] instance=ExtResource( 42 )]
 position = Vector2( 959, 246 )
 z_index = 1
 collision_mask = 1
 finalPosX = 959
 finalPosY = 246
 
-[node name="Piece_12" parent="." instance=ExtResource( 44 )]
+[node name="Piece_12" parent="." groups=["piece"] instance=ExtResource( 44 )]
 position = Vector2( 873, 145 )
 z_index = 1
 collision_mask = 1
 finalPosX = 873
 finalPosY = 145
 
-[node name="Piece_13" parent="." instance=ExtResource( 48 )]
+[node name="Piece_13" parent="." groups=["piece"] instance=ExtResource( 48 )]
 position = Vector2( 564, 50 )
 z_index = 1
 collision_mask = 1
 finalPosX = 654
 finalPosY = 50
 
-[node name="Piece_14" parent="." instance=ExtResource( 43 )]
+[node name="Piece_14" parent="." groups=["piece"] instance=ExtResource( 43 )]
 position = Vector2( 769, 248 )
 z_index = 1
 collision_mask = 1
 finalPosX = 769
 finalPosY = 248
 
-[node name="Piece_15" parent="." instance=ExtResource( 49 )]
+[node name="Piece_15" parent="." groups=["piece"] instance=ExtResource( 49 )]
 position = Vector2( 664, 346 )
 z_index = 1
 collision_mask = 1
 finalPosX = 664
 finalPosY = 346
 
-[node name="Piece_16" parent="." instance=ExtResource( 50 )]
+[node name="Piece_16" parent="." groups=["piece"] instance=ExtResource( 50 )]
 position = Vector2( 154, 247 )
 z_index = 1
 collision_mask = 1
 finalPosX = 154
 finalPosY = 247
 
-[node name="Piece_17" parent="." instance=ExtResource( 51 )]
+[node name="Piece_17" parent="." groups=["piece"] instance=ExtResource( 51 )]
 position = Vector2( 357, 245 )
 z_index = 1
 collision_mask = 1
 finalPosX = 357
 finalPosY = 245
 
-[node name="Piece_18" parent="." instance=ExtResource( 52 )]
+[node name="Piece_18" parent="." groups=["piece"] instance=ExtResource( 52 )]
 position = Vector2( 459, 146 )
 z_index = 1
 collision_mask = 1
 finalPosX = 459
 finalPosY = 146
 
-[node name="Piece_19" parent="." instance=ExtResource( 53 )]
+[node name="Piece_19" parent="." groups=["piece"] instance=ExtResource( 53 )]
 position = Vector2( 67, 148 )
 z_index = 1
 collision_mask = 1
 finalPosX = 67
 finalPosY = 148
 
-[node name="Piece_20" parent="." instance=ExtResource( 33 )]
+[node name="Piece_20" parent="." groups=["piece"] instance=ExtResource( 33 )]
 position = Vector2( 256, 145 )
 z_index = 1
 collision_mask = 1
 finalPosX = 256
 finalPosY = 145
 
-[node name="Piece_21" parent="." instance=ExtResource( 34 )]
+[node name="Piece_21" parent="." groups=["piece"] instance=ExtResource( 34 )]
 position = Vector2( 958, 50 )
 z_index = 1
 collision_mask = 1
 finalPosX = 958
 finalPosY = 50
 
-[node name="Piece_22" parent="." instance=ExtResource( 35 )]
+[node name="Piece_22" parent="." groups=["piece"] instance=ExtResource( 35 )]
 position = Vector2( 871, 548 )
 z_index = 1
 collision_mask = 1
 finalPosX = 871
 finalPosY = 548
 
-[node name="Piece_23" parent="." instance=ExtResource( 36 )]
+[node name="Piece_23" parent="." groups=["piece"] instance=ExtResource( 36 )]
 position = Vector2( 561, 448 )
 z_index = 1
 collision_mask = 1
 finalPosX = 561
 finalPosY = 448
 
-[node name="Piece_24" parent="." instance=ExtResource( 37 )]
+[node name="Piece_24" parent="." groups=["piece"] instance=ExtResource( 37 )]
 position = Vector2( 768, 51 )
 z_index = 1
 collision_mask = 1
 finalPosX = 768
 finalPosY = 51
 
-[node name="Piece_25" parent="." instance=ExtResource( 38 )]
+[node name="Piece_25" parent="." groups=["piece"] instance=ExtResource( 38 )]
 position = Vector2( 667, 150 )
 z_index = 1
 collision_mask = 1
 finalPosX = 667
 finalPosY = 150
 
-[node name="Piece_26" parent="." instance=ExtResource( 39 )]
+[node name="Piece_26" parent="." groups=["piece"] instance=ExtResource( 39 )]
 position = Vector2( 66, 549 )
 z_index = 1
 collision_mask = 1
 finalPosX = 66
 finalPosY = 549
 
-[node name="Piece_27" parent="." instance=ExtResource( 40 )]
+[node name="Piece_27" parent="." groups=["piece"] instance=ExtResource( 40 )]
 position = Vector2( 254, 549 )
 z_index = 1
 collision_mask = 1
 finalPosX = 254
 finalPosY = 549
 
-[node name="Piece_28" parent="." instance=ExtResource( 41 )]
+[node name="Piece_28" parent="." groups=["piece"] instance=ExtResource( 41 )]
 position = Vector2( 959, 448 )
 z_index = 1
 collision_mask = 1
 finalPosX = 959
 finalPosY = 448
 
-[node name="Piece_29" parent="." instance=ExtResource( 59 )]
+[node name="Piece_29" parent="." groups=["piece"] instance=ExtResource( 59 )]
 position = Vector2( 871, 346 )
 z_index = 1
 collision_mask = 1
 finalPosX = 871
 finalPosY = 346
 
-[node name="Piece_30" parent="." instance=ExtResource( 61 )]
+[node name="Piece_30" parent="." groups=["piece"] instance=ExtResource( 61 )]
 position = Vector2( 562, 247 )
 z_index = 1
 collision_mask = 1
 finalPosX = 562
 finalPosY = 247
 
-[node name="Piece_31" parent="." instance=ExtResource( 57 )]
+[node name="Piece_31" parent="." groups=["piece"] instance=ExtResource( 57 )]
 position = Vector2( 152, 149 )
 z_index = 1
 collision_mask = 1
 finalPosX = 152
 finalPosY = 149
 
-[node name="Piece_32" parent="." instance=ExtResource( 60 )]
+[node name="Piece_32" parent="." groups=["piece"] instance=ExtResource( 60 )]
 position = Vector2( 359, 147 )
 z_index = 1
 collision_mask = 1
 finalPosX = 359
 finalPosY = 147
 
-[node name="Piece_33" parent="." instance=ExtResource( 58 )]
+[node name="Piece_33" parent="." groups=["piece"] instance=ExtResource( 58 )]
 position = Vector2( 152, 534 )
 z_index = 1
 collision_mask = 1
 finalPosX = 152
 finalPosY = 534
 
-[node name="Piece_34" parent="." instance=ExtResource( 22 )]
+[node name="Piece_34" parent="." groups=["piece"] instance=ExtResource( 22 )]
 position = Vector2( 356, 534 )
 z_index = 1
 collision_mask = 1
 finalPosX = 356
 finalPosY = 534
 
-[node name="Piece_35" parent="." instance=ExtResource( 18 )]
+[node name="Piece_35" parent="." groups=["piece"] instance=ExtResource( 18 )]
 position = Vector2( 458, 449 )
 z_index = 1
 collision_mask = 1
 finalPosX = 458
 finalPosY = 449
 
-[node name="Piece_36" parent="." instance=ExtResource( 10 )]
+[node name="Piece_36" parent="." groups=["piece"] instance=ExtResource( 10 )]
 position = Vector2( 153, 347 )
 z_index = 1
 collision_mask = 1
 finalPosX = 153
 finalPosY = 347
 
-[node name="Piece_37" parent="." instance=ExtResource( 23 )]
+[node name="Piece_37" parent="." groups=["piece"] instance=ExtResource( 23 )]
 position = Vector2( 355, 347 )
 z_index = 1
 collision_mask = 1
 finalPosX = 355
 finalPosY = 347
 
-[node name="Piece_38" parent="." instance=ExtResource( 6 )]
+[node name="Piece_38" parent="." groups=["piece"] instance=ExtResource( 6 )]
 position = Vector2( 458, 243 )
 z_index = 1
 collision_mask = 1
 finalPosX = 458
 finalPosY = 243
 
-[node name="Piece_39" parent="." instance=ExtResource( 15 )]
+[node name="Piece_39" parent="." groups=["piece"] instance=ExtResource( 15 )]
 position = Vector2( 50, 448 )
 z_index = 1
 collision_mask = 1
 finalPosX = 50
 finalPosY = 448
 
-[node name="Piece_40" parent="." instance=ExtResource( 13 )]
+[node name="Piece_40" parent="." groups=["piece"] instance=ExtResource( 13 )]
 position = Vector2( 253, 447 )
 z_index = 1
 collision_mask = 1
 finalPosX = 253
 finalPosY = 447
 
-[node name="Piece_41" parent="." instance=ExtResource( 11 )]
+[node name="Piece_41" parent="." groups=["piece"] instance=ExtResource( 11 )]
 position = Vector2( 974, 348 )
 z_index = 1
 collision_mask = 1
 finalPosX = 974
 finalPosY = 348
 
-[node name="Piece_42" parent="." instance=ExtResource( 16 )]
+[node name="Piece_42" parent="." groups=["piece"] instance=ExtResource( 16 )]
 position = Vector2( 872, 246 )
 z_index = 1
 collision_mask = 1
 finalPosX = 872
 finalPosY = 246
 
-[node name="Piece_43" parent="." instance=ExtResource( 24 )]
+[node name="Piece_43" parent="." groups=["piece"] instance=ExtResource( 24 )]
 position = Vector2( 563, 148 )
 z_index = 1
 collision_mask = 1
 finalPosX = 563
 finalPosY = 148
 
-[node name="Piece_44" parent="." instance=ExtResource( 25 )]
+[node name="Piece_44" parent="." groups=["piece"] instance=ExtResource( 25 )]
 position = Vector2( 768, 346 )
 z_index = 1
 collision_mask = 1
 finalPosX = 768
 finalPosY = 346
 
-[node name="Piece_45" parent="." instance=ExtResource( 7 )]
+[node name="Piece_45" parent="." groups=["piece"] instance=ExtResource( 7 )]
 position = Vector2( 663, 449 )
 z_index = 1
 collision_mask = 1
 finalPosX = 663
 finalPosY = 449
 
-[node name="Piece_46" parent="." instance=ExtResource( 26 )]
+[node name="Piece_46" parent="." groups=["piece"] instance=ExtResource( 26 )]
 position = Vector2( 770, 148 )
 z_index = 1
 collision_mask = 1
 finalPosX = 770
 finalPosY = 148
 
-[node name="Piece_47" parent="." instance=ExtResource( 12 )]
+[node name="Piece_47" parent="." groups=["piece"] instance=ExtResource( 12 )]
 position = Vector2( 666, 66 )
 z_index = 1
 collision_mask = 1
 finalPosX = 666
 finalPosY = 66
 
-[node name="Piece_48" parent="." instance=ExtResource( 27 )]
+[node name="Piece_48" parent="." groups=["piece"] instance=ExtResource( 27 )]
 position = Vector2( 666, 252 )
 z_index = 1
 collision_mask = 1
 finalPosX = 666
 finalPosY = 252
 
-[node name="Piece_49" parent="." instance=ExtResource( 14 )]
+[node name="Piece_49" parent="." groups=["piece"] instance=ExtResource( 14 )]
 position = Vector2( 51, 246 )
 z_index = 1
 collision_mask = 1
 finalPosX = 51
 finalPosY = 246
 
-[node name="Piece_50" parent="." instance=ExtResource( 8 )]
+[node name="Piece_50" parent="." groups=["piece"] instance=ExtResource( 8 )]
 position = Vector2( 257, 247 )
 z_index = 1
 collision_mask = 1
 finalPosX = 257
 finalPosY = 247
 
-[node name="Piece_51" parent="." instance=ExtResource( 9 )]
+[node name="Piece_51" parent="." groups=["piece"] instance=ExtResource( 9 )]
 position = Vector2( 974, 146 )
 z_index = 1
 collision_mask = 1
 finalPosX = 974
 finalPosY = 146
 
-[node name="Piece_52" parent="." instance=ExtResource( 28 )]
+[node name="Piece_52" parent="." groups=["piece"] instance=ExtResource( 28 )]
 position = Vector2( 870, 66 )
 z_index = 1
 collision_mask = 1
 finalPosX = 870
 finalPosY = 66
 
-[node name="Piece_53" parent="." instance=ExtResource( 29 )]
+[node name="Piece_53" parent="." groups=["piece"] instance=ExtResource( 29 )]
 position = Vector2( 561, 534 )
 z_index = 1
 collision_mask = 1
 finalPosX = 561
 finalPosY = 534
 
-[node name="Piece_54" parent="." instance=ExtResource( 17 )]
+[node name="Piece_54" parent="." groups=["piece"] instance=ExtResource( 17 )]
 position = Vector2( 461, 65 )
 z_index = 1
 collision_mask = 1
 finalPosX = 461
 finalPosY = 65
 
-[node name="Piece_55" parent="." instance=ExtResource( 19 )]
+[node name="Piece_55" parent="." groups=["piece"] instance=ExtResource( 19 )]
 position = Vector2( 767, 534 )
 z_index = 1
 collision_mask = 1
 finalPosX = 767
 finalPosY = 534
 
-[node name="Piece_56" parent="." instance=ExtResource( 20 )]
+[node name="Piece_56" parent="." groups=["piece"] instance=ExtResource( 20 )]
 position = Vector2( 52, 64 )
 z_index = 1
 collision_mask = 1
 finalPosX = 52
 finalPosY = 64
 
-[node name="Piece_57" parent="." instance=ExtResource( 21 )]
+[node name="Piece_57" parent="." groups=["piece"] instance=ExtResource( 21 )]
 position = Vector2( 257, 65 )
 z_index = 1
 collision_mask = 1
 finalPosX = 257
 finalPosY = 65
 
-[node name="Piece_58" parent="." instance=ExtResource( 32 )]
+[node name="Piece_58" parent="." groups=["piece"] instance=ExtResource( 32 )]
 position = Vector2( 973, 534 )
 z_index = 1
 collision_mask = 1
 finalPosX = 973
 finalPosY = 534
 
-[node name="Piece_59" parent="." instance=ExtResource( 31 )]
+[node name="Piece_59" parent="." groups=["piece"] instance=ExtResource( 31 )]
 position = Vector2( 872, 448 )
 z_index = 1
 collision_mask = 1
 finalPosX = 872
 finalPosY = 448
 
-[node name="Piece_60" parent="." instance=ExtResource( 30 )]
+[node name="Piece_60" parent="." groups=["piece"] instance=ExtResource( 30 )]
 position = Vector2( 559, 347 )
 z_index = 1
 collision_mask = 1
 finalPosX = 559
 finalPosY = 347
+
+[node name="IMH" parent="." instance=ExtResource( 63 )]
+script = ExtResource( 62 )
