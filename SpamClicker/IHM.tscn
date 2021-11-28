@@ -1,0 +1,113 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://SpamClicker/code/IHM.gd" type="Script" id=1]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.109804, 0.4, 0.643137, 1 )
+
+[node name="IMH" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="CO2Bar" type="ProgressBar" parent="."]
+anchor_top = 0.5
+anchor_bottom = 0.5
+margin_left = 78.0
+margin_top = -130.0
+margin_right = 345.0
+margin_bottom = -88.0
+rect_rotation = 90.0
+custom_styles/fg = SubResource( 1 )
+custom_styles/bg = SubResource( 2 )
+step = 1.0
+value = 25.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CO2Label" type="Label" parent="."]
+margin_left = 35.0
+margin_top = 447.0
+margin_right = 90.0
+margin_bottom = 473.0
+text = "% CO2"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RulesAndStart" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Explanations" type="Label" parent="RulesAndStart"]
+margin_top = 250.0
+margin_right = 1024.0
+margin_bottom = 349.0
+text = "Une  partie du CO2 que nous émettons est capturé par les océans ce qui engendre une acidification des eaux.
+Tu as peut-être déjà dû remarquer que l'eau gazeuse était plus acide que l'eau plate ?
+Cette acidification des océans cause de nombreux troubles à la biodiversité marine pourtant essentielle à notre survie.
+
+Ton but dans ce mini-jeux est de faire en sorte que le % de C02 dans l'océan n'atteignent pas 100%. 
+Pour cela spamme, genre SPAMME le bouton \"Purge\" en bas à droite pour permettre à l'océan de respirer de nouveau."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StarButton" type="Button" parent="RulesAndStart"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -72.0
+margin_top = -152.0
+margin_right = 73.0
+margin_bottom = -102.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CO2IncreaseTimer" type="Timer" parent="."]
+
+[node name="Result" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Result"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -20.0
+margin_top = -7.0
+margin_right = 20.0
+margin_bottom = 7.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Return" type="Button" parent="Result"]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -100.0
+margin_top = 28.0
+margin_right = 101.0
+margin_bottom = 48.0
+text = "Retourner dans le sous-marin"
+__meta__ = {
+"_edit_use_anchors_": false
+}

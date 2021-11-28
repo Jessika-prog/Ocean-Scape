@@ -2,6 +2,7 @@ extends KinematicBody2D
 
 signal onDragAndDrop
 signal checkOnDrop
+signal pieceOk
 
 var isDragging := false
 var pieceName = null
@@ -50,7 +51,7 @@ func check_drop_piece():
         var dropY = abs(global_transform.origin.y - finalPosY)
         
         if dropX < thresholdX and dropY < thresholdY:
-            print("ok position" + name)
+            emit_signal("pieceOk")
             global_transform.origin.x = finalPosX
             global_transform.origin.y = finalPosY
             input_pickable = false
