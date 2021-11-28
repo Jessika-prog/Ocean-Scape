@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/intro Sogefish.wav-2f8e3841200c2f0159bf1f3b5880d358.sample"
+
+[deps]
+
+source_file="res://Escape/sounds/intro Sogefish.wav"
+dest_files=[ "res://.import/intro Sogefish.wav-2f8e3841200c2f0159bf1f3b5880d358.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
