@@ -34,14 +34,14 @@ func _ready() -> void:
 
 # Go to interior screen.
 func goDiscover() -> void:
-	cleanScreen()
-	$Screen.add_child(interiorScreen)
-	
+    cleanScreen()
+    $Screen.add_child(interiorScreen)
+    
 # Play SpamClicker game.
 func goSpamClicker() -> void:
-	cleanScreen()
-	$Screen.add_child(spamClickerScreen)
-	
+    cleanScreen()
+    $Screen.add_child(spamClickerScreen)
+    
 # Play puzzle game.
 func goPuzzle() -> void:
 	cleanScreen()
@@ -53,5 +53,5 @@ func goMaze() -> void:
 
 # Remove screen to load a new one.
 func cleanScreen() -> void:
-	var screen := $Screen.get_child(0)
-	$Screen.remove_child(screen)
+    var screen := $Screen.get_child(0)
+    $Screen.remove_child(screen)
