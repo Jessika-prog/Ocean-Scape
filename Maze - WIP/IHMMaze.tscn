@@ -1,0 +1,59 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Maze - WIP/code/IHMMaze.gd" type="Script" id=1]
+
+[node name="IHMMaze" type="CanvasLayer"]
+script = ExtResource( 1 )
+
+[node name="RulesAndStart" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Explanations" type="Label" parent="RulesAndStart"]
+margin_top = 250.0
+margin_right = 1024.0
+margin_bottom = 349.0
+text = "Depuis sa chute sur la terre jusqu'à son arrivée dans l'océan, un parcours du combattant attend l'eau de pluie.
+Elle va passer par des endroits divers et variés, tout en récupérant avec elle des particules polluantes.
+Elle va ainsi les rapporter dans les mers et contaminer les espèces aquatiques mais aussi terrestres 
+et aériennes s'y nourrissant.
+
+Aide cette jeune goutte à trouver son chemin jusqu'à l'océan en évitant les pièges.
+"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="StarButton" type="Button" parent="RulesAndStart"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -72.0
+margin_top = -152.0
+margin_right = 73.0
+margin_bottom = -102.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+text = "Start"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Return" type="Button" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -99.0
+margin_top = 76.0
+margin_right = 102.0
+margin_bottom = 96.0
+text = "Retourner dans le sous-marin"
+__meta__ = {
+"_edit_use_anchors_": false
+}

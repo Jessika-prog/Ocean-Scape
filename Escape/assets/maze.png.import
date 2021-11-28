@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/mazeFrame.png-686eebb3928884994dec90eca9f4452a.stex"
+path="res://.import/maze.png-5eafd86e6841c2ac664dff41c97c6662.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Maze/img/mazeFrame.png"
-dest_files=[ "res://.import/mazeFrame.png-686eebb3928884994dec90eca9f4452a.stex" ]
+source_file="res://Escape/assets/maze.png"
+dest_files=[ "res://.import/maze.png-5eafd86e6841c2ac664dff41c97c6662.stex" ]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=true
-flags/mipmaps=true
+flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
 process/fix_alpha_border=true

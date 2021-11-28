@@ -5,12 +5,14 @@ var intro := preload("res://Escape/Submarine.tscn")
 var interior := preload("res://Escape/Interior.tscn")
 var spamClicker := preload("res://SpamClicker/SpamClicker.tscn")
 var puzzle := preload("res://JigsawPuzzle/PuzzleMain.tscn")
+var maze := preload("res://Maze - WIP/Maze.tscn")
 
 # Instances of scenes.
 onready var introScreen := intro.instance()
 onready var interiorScreen := interior.instance()
 onready var spamClickerScreen := spamClicker.instance()
 onready var puzzleScreen := puzzle.instance()
+onready var mazeScreen := maze.instance()
 
 func _ready() -> void:
 	
@@ -23,9 +25,12 @@ func _ready() -> void:
 	# Button helping to play mini-game on interior screen.
 	interiorScreen.get_node("GoPuzzle").connect("pressed", self, "goPuzzle")
 	interiorScreen.get_node("GoSpamClicker").connect("pressed", self, "goSpamClicker")
+	interiorScreen.get_node("GoMaze").connect("pressed", self, "goMaze")
+	
 	
 	# Button helping returning on interior screen.
 	spamClickerScreen.get_node("IMH/Result/Return").connect("pressed", self, "goDiscover")
+#	mazeScreen.get_node("IMHMaze/Return").connect("pressed", self, "goDiscover")
 
 # Go to interior screen.
 func goDiscover() -> void:
@@ -41,6 +46,10 @@ func goSpamClicker() -> void:
 func goPuzzle() -> void:
 	cleanScreen()
 	$Screen.add_child(puzzleScreen)
+	
+func goMaze() -> void:
+	cleanScreen()
+	$Screen.add_child(mazeScreen)
 
 # Remove screen to load a new one.
 func cleanScreen() -> void:
