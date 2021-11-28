@@ -48,12 +48,11 @@ __meta__ = {
 margin_top = 250.0
 margin_right = 1024.0
 margin_bottom = 349.0
-text = "Une  partie du CO2 que nous émettons est capturé par les océans ce qui engendre une acidification des eaux.
-Tu as peut-être déjà dû remarquer que l'eau gazeuse était plus acide que l'eau plate ?
-Cette acidification des océans cause de nombreux troubles à la biodiversité marine pourtant essentielle à notre survie.
+text = "Avec l'augmentation de CO2 dans l'atmosphère et la disparition de certains filtres naturels,
+les océans s'acidifient et ont un impact néfaste sur les
+organismes marins tels que les crustacés, les phytoplanctons, les mollusques et bien d'autres.
 
-Ton but dans ce mini-jeux est de faire en sorte que le % de C02 dans l'océan n'atteignent pas 100%. 
-Pour cela spamme, genre SPAMME le bouton \"Purge\" en bas à droite pour permettre à l'océan de respirer de nouveau."
+Pour faire baisser la jauge de CO2, clique le plus vite possible sur le bouton! Objectif? Zéro CO2!"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

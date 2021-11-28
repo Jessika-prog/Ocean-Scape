@@ -16,12 +16,12 @@ __meta__ = {
 margin_top = 250.0
 margin_right = 1024.0
 margin_bottom = 349.0
-text = "Une  partie du CO2 que nous émettons est capturé par les océans ce qui engendre une acidification des eaux.
-Tu as peut-être déjà dû remarquer que l'eau gazeuse était plus acide que l'eau plate ?
-Cette acidification des océans cause de nombreux troubles à la biodiversité marine pourtant essentielle à notre survie.
+text = "La biodiversité marine est très importante pour l'écosytème des océans mais aussi pour la régulation du climat planétaire.
+Les changements climatiques et les événements météorologiques exceptionnels ont un impact considérable sur cette biodiversité.
+Ils modifient l'abondance de certaines espèces (mort, reproduction en baisse), les comportements (alimentation, migration, relations entre espèces)
+et apauvrissent les milieux en supprimant des éléments essentiels(habitats, nourritures, filtres à CO2).
 
-Ton but dans ce mini-jeux est de faire en sorte que le % de C02 dans l'océan n'atteignent pas 100%. 
-Pour cela spamme, genre SPAMME le bouton \"Purge\" en bas à droite pour permettre à l'océan de respirer de nouveau."
+Ta mission est de recomposer ce fond marin pour permettre à ses habitants de reprendre possession de leur territoire."
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false

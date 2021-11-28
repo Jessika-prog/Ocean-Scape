@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/perso.png-bb65a7d43269631d0eb48b4c387e7014.stex"
+path="res://.import/perso.png-b44d5b4f992c525f440e055fd7bf50fd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Maze/img/perso.png"
-dest_files=[ "res://.import/perso.png-bb65a7d43269631d0eb48b4c387e7014.stex" ]
+source_file="res://Maze - WIP/img/perso.png"
+dest_files=[ "res://.import/perso.png-b44d5b4f992c525f440e055fd7bf50fd.stex" ]
 
 [params]
 
